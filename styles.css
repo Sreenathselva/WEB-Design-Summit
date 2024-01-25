@@ -3,6 +3,9 @@ body{
     padding: 0;
     overflow-x: hidden;
 }
+a{
+    text-decoration: none
+}
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
         @import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Raleway:wght@300&display=swap');
         @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
@@ -38,8 +41,9 @@ body{
 #Navbar{
     display: flex;
     justify-content: space-around;
-    
-   
+}
+.grand-ico{
+    width: 13vw;
 }
 #Navbar{
     display: flex;
@@ -94,10 +98,24 @@ li a{
     text-decoration: none;
     color: rgb(255, 255, 255);
     transition: all ease .2s;
-
 }
-.nav-list  li a:hover{
+/* .nav-list  li a:hover{
     color: #e91e63;
+} */
+.navActive{
+    color: #e91e63 !important;
+}
+.navActive::before {
+    content: '';
+    width: 100%;
+    height: 2px;
+    display: block;
+    background-color: #e91e63;
+    bottom: 0; 
+    left: 0;
+    position: absolute;
+    transform-origin:  right;
+    transition: transform 0.3s linear;
 }
 .nav-list{
     margin-left: 150px;
@@ -164,6 +182,7 @@ nav{
         font-size: 40px;
     font-weight: 700;
     border-radius: 0px;
+    box-shadow: 0px 5px 7px 0px rgba(163,163,163,1);
     -webkit-box-shadow: 0px 5px 7px 0px rgba(163,163,163,1);
 
 }
@@ -415,6 +434,7 @@ li:hover::before {
     justify-content: left;
     height: 24vw;
     align-items: left;
+    box-shadow: 0px 5px 7px 0px rgba(163,163,163,1);
     -webkit-box-shadow: 0px 5px 7px 0px rgba(163,163,163,1);
 }
 .p-box-container{
@@ -643,6 +663,7 @@ p{
     font-size: 40px;
     font-weight: 700;
     border-radius: 0px;
+    box-shadow: 0px 5px 7px 0px rgba(163,163,163,1);
     -webkit-box-shadow: 0px 5px 7px 0px rgba(163,163,163,1);
     display: flex;
     gap: 30px;
@@ -669,6 +690,7 @@ width: 70px;
     margin-top: 100px;
 }
 .left-container{
+    box-shadow: 0px 3px 3px 0px rgba(163,163,163,1);
     -webkit-box-shadow: 0px 3px 3px 0px rgba(163,163,163,1);
 }
 .speaker-head{
@@ -703,6 +725,7 @@ width: 70px;
     width: 90vw;
     display: flex;
     justify-content: center;
+    box-shadow: 0px 5px 7px 0px rgba(163,163,163,1);
     -webkit-box-shadow: 0px 5px 7px 0px rgba(163,163,163,1);
 }
 .speakers-section{
@@ -876,8 +899,7 @@ width: 70px;
     align-items: center;
     flex-direction: column;
 }
-.Questions{
-}
+
 .Q-head{
     display: flex;
     flex-direction: column;
@@ -942,6 +964,7 @@ margin-bottom: 40px;
     background: floralwhite;
 }
 .item:hover{
+    box-shadow: 0px 15px 20px 0px rgba(163,163,163,1);
     -webkit-box-shadow: 0px 15px 20px 0px rgba(163,163,163,1);
 }
 .sponsors{
@@ -1341,9 +1364,40 @@ h1{
     justify-content: center;
     align-items: center;
 }
+#footer{
+    width: 100vw;
+    padding: 1vw 0;
+    background-color: #171515dc;
+}
+.footerContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.icons{
+    width: 13vw;
+    display: flex;
+    justify-content: space-around;
+}
+.icon{
+    width: 2vw;
+    height: 2vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.icon i{
+    font-size: 18px;
+    color: #dc376e;
+}
+.copyright{
+    color: white;
+    font-weight: 400;
+    font-family: 'Raleway';
+    font-size: 12px;
+}
 @media screen and (max-width:767px) {
-
-    height: 60vh;
 
 }
 @media screen and (min-width: 668px) and (max-width: 1024px){
