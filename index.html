@@ -3,16 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>UIDECK</title>
+    <title>The Web-Design-Summit</title>
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">   
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
     <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Lato:wght@300;400;700&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Oswald:wght@200;300;400;500;600;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Lato:wght@300;400;700&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Oswald:wght@200;300;400;500;600;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300,400;600,700&display=swap" rel="stylesheet">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link rel="shortcut icon" href="images/favicon (2).ico" type="image/x-icon">
     <script src="https://kit.fontawesome.com/e4891421b6.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
@@ -31,36 +35,7 @@
 
 </style>
 <script>
-  // Set the date we're counting down to
-  var countDownDate = new Date("2023-12-10T07:59:59+04:00").getTime();
-  
-  // Update the count down every 1 second
-  var x = setInterval(function() {
-  
-    // Get today's date and time
-    var now = new Date().getTime();
-  
-    // Find the distance between now and the count down date
-    var distance = countDownDate - now;
-  
-    // Time calculations for days, hours, minutes and seconds
-    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-  
-    // Display the result in the element with id="demo"
-    document.getElementById("d").innerHTML = days;
-    document.getElementById("h").innerHTML =hours;
-    document.getElementById("m").innerHTML = minutes;
-    document.getElementById("s").innerHTML = seconds;
-      // If the count down is finished, write some text
-      if (distance < 0) {
-        clearInterval(x);
-        document.getElementById("demo").innerHTML = "EXPIRED";
-      }
-    }, 1000);
-  
+ 
   </script>
   
 </head>
@@ -70,7 +45,7 @@
           <div class="navbar-container">
             <div id="Navbar">
               <a href="index.html">
-                <img class="grand-ico" src="images/grand-logo.png" alt="GRAND_LOGO">
+                <img class="grand-ico" src="images/websummit.png" alt="GRAND_LOGO">
             </a>
                 <nav>
                     <div class="nav-list">
@@ -81,7 +56,6 @@
                             <li><a href="#GALLERY">GALLERY</a></li>
                             <li><a href="#Q-container">FAQ</a></li>
                             <li><a href="#sponsor">SPONSORS</a></li>
-                            <!-- <li><a href="">PRICING</a></li> -->
                             <li><a href="#dropMsg">CONTACT</a></li>
                         </ul>
                     </div>
@@ -908,7 +882,22 @@
 </div>
 <div id="footer">
   <div class="footerContainer">
-    
+    <div class="profiles">
+      <div class="icons">
+        <a href="https://www.linkedin.com/in/selva-sreenath-s-84895a253/" target="_blank"><div class="icon">
+          <i class="fa-brands fa-linkedin-in"></i>
+        </div></a>
+        <a href="https://github.com/Sreenathselva" target="_blank"><div class="icon">
+          <i class="fa-brands fa-github"></i>
+        </div></a>
+        <a href="https://www.instagram.com/sreenathselva8/" target="_blank"><div class="icon">
+          <i class="fa-brands fa-instagram"></i>
+        </div></a>
+      </div>
+    </div>
+    <div class="copyright">
+      © Delveloped By SreenathSelva.
+    </div>
   </div>
 </div>
 
@@ -916,18 +905,6 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
     <script>
       AOS.init()
-    </script>
-    <script>
-       const navEl=document.querySelector('.navbar-container')
-        window.addEventListener('scroll' ,( ) =>{
-      if(window.scrollY >= 56){
-          navEl.classList.add('navbar-scrolled');
-      }
-      else if(window.scrollY <=56){
-          navEl.classList.remove('navbar-scrolled');
-      }
-  })
-  
     </script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
