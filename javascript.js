@@ -7,7 +7,7 @@ else if(window.scrollY <=56){
   navEl.classList.remove('navbar-scrolled');
 }
 })
-
+alert("This website is created by sreenathselva")
 
 document.addEventListener('DOMContentLoaded', function () {
     var navLinks = document.querySelectorAll('nav ul li a');
