@@ -37,7 +37,7 @@ a{
   ::-webkit-scrollbar-thumb {
     background: #e91e63;
   }
-
+/* navbarrr */
 #Navbar{
     display: flex;
     justify-content: space-around;
