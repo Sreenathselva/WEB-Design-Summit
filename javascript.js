@@ -86,7 +86,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
 
 
-  //for gallery slick slide//
+  //for gallery slider//
 
   $(document).ready(function(){
     $('.gallery').slick({
